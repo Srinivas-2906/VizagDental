@@ -1117,9 +1117,16 @@ h1, h2, h3, h4 {
     }
 
     .hero-title {
-        font-size: 3rem;
+        font-size: 1.5rem;
     }
-
+    .hero-subtitle {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+        line-height: 1;
+        opacity: 0;
+        transform: translateY(30px);
+        animation: fadeInUp 1s ease forwards 0.7s;
+    }
     .section {
         padding: 4rem 1.5rem;
     }
@@ -1143,9 +1150,16 @@ h1, h2, h3, h4 {
     }
 
     .hero-title {
-        font-size: 2.5rem;
+        font-size: 1.5rem;
     }
-
+    .hero-subtitle {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+        line-height: 1;
+        opacity: 0;
+        transform: translateY(30px);
+        animation: fadeInUp 1s ease forwards 0.7s;
+    }
     .btn {
         display: block;
         width: 100%;
