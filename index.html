@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vizag Dental</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-content">
+            <a href="#" class="logo">
+                <i class="fas fa-tooth"></i>
+                Vizag Dental
+            </a>
+            <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="nav-links">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#team" class="nav-link">Team</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <img src="images/Home.jpg" class="hero-video" alt="Luxury Dental Office">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Where Advanced Technology Meets Exceptional Comfort</h1>
+            <p class="hero-subtitle">Transform your smile in our state-of-the-art facility, guided by award-winning dental specialists dedicated to providing you with the highest standard of care.</p>
+            <a href="#" class="btn btn-primary" id="scheduleConsultationBtn">Schedule Consultation</a>
+            <a href="#services" class="btn btn-outline">Explore Services</a>
+        </div>
+        <a href="#services" class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <div class="section-inner">
+            <div class="section-header">
+                <h2 class="section-title">Our Premium Services</h2>
+                <p class="section-subtitle">Experience world-class dental care with our comprehensive range of services tailored to your needs.</p>
+            </div>
+            <div class="services-grid">
+                <!-- Cosmetic Dentistry -->
+                <div class="service-card" data-aos="fade-up" data-service="cosmetic">
+                    <div class="service-badge">Popular</div>
+                    <div class="service-inner">
+                        <i class="fas fa-teeth service-icon"></i>
+                        <h3 class="service-title">Cosmetic Dentistry</h3>
+                        <p class="service-description">Transform your smile with premium veneers, whitening, and complete smile makeovers.</p>
+                        <button class="service-btn">
+                            Learn More
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+    
+                <!-- Dental Implants -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100" data-service="implants">
+                    <div class="service-badge">Expert Care</div>
+                    <div class="service-inner">
+                        <i class="fas fa-tooth service-icon"></i>
+                        <h3 class="service-title">Dental Implants</h3>
+                        <p class="service-description">Restore your smile with state-of-the-art implant technology and expert care.</p>
+                        <button class="service-btn">
+                            Learn More
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+    
+                <!-- Orthodontics -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200" data-service="orthodontics">
+                    <div class="service-badge">Advanced Tech</div>
+                    <div class="service-inner">
+                        <i class="fas fa-teeth-open service-icon"></i>
+                        <h3 class="service-title">Orthodontics</h3>
+                        <p class="service-description">Achieve the perfect smile with our advanced orthodontic treatments and Invisalign.</p>
+                        <button class="service-btn">
+                            Learn More
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Add the modal markup before the closing body tag -->
+    <div class="modal" id="serviceModal">
+        <div class="modal-content">
+            <button class="modal-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-header">
+                <i class="modal-icon"></i>
+                <h3 class="modal-title"></h3>
+            </div>
+            <div class="modal-body">
+                <!-- Content will be dynamically inserted -->
+            </div>
+         
+        </div>
+    </div>
+ <!-- About Section -->
+ <section id="about" class="section">
+    <div class="section-inner">
+        <div class="about-grid">
+            <div class="about-content" data-aos="fade-right">
+                <h2 class="about-title">Redefining Dental Care Excellence</h2>
+                <p class="about-description">At Vizag Dentals, we believe in providing more than just dental treatments. We create an environment where luxury meets healthcare, ensuring every visit is a relaxing and rejuvenating experience.</p>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">10k+</div>
+                        <div class="stat-label">Happy Patients</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Award Winning</div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image" data-aos="fade-left">
+                <img src="images/Office.png" alt="Luxury Dental Office">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Gallery Section -->
+
+ <!-- Add Gallery Section -->
+ <section id="gallery" class="gallery">
+    <h2 class="section-title">Smile Gallery</h2>
+    <div class="gallery-grid">
+        <div class="gallery-item" data-aos="fade-up">
+            <img src="images/2.png" alt="Before and After 1">
+            <div class="gallery-item-overlay">
+                <h3>Smile Makeover</h3>
+                <p>Complete transformation with veneers</p>
+            </div>
+        </div>
+        <div class="gallery-item" data-aos="fade-up">
+            <img src="images/3.png" alt="Before and After 2">
+            <div class="gallery-item-overlay">
+                <h3>Dental Implants</h3>
+                <p>Natural-looking replacement teeth</p>
+            </div>
+        </div>
+        <div class="gallery-item" data-aos="fade-up">
+            <img src="images/2.png" alt="Before and After 3">
+            <div class="gallery-item-overlay">
+                <h3>Teeth Whitening</h3>
+                <p>Professional whitening results</p>
+            </div>
+        </div>
+        <div class="gallery-item" data-aos="fade-up">
+            <img src="images/2.png" alt="Before and After 4">
+            <div class="gallery-item-overlay">
+                <h3>Orthodontics</h3>
+                <p>Invisible braces treatment</p>
+            </div>
+        </div>
+        <div class="gallery-item" data-aos="fade-up">
+            <img src="images/2.png" alt="Before and After 5">
+            <div class="gallery-item-overlay">
+                <h3>Cosmetic Bonding</h3>
+                <p>Minor repairs with major impact</p>
+            </div>
+        </div>
+        <div class="gallery-item" data-aos="fade-up">
+            <img src="images/2.png" alt="Before and After 6">
+            <div class="gallery-item-overlay">
+                <h3>Full Mouth Reconstruction</h3>
+                <p>Complete smile transformation</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Gallery Modal -->
+<div class="gallery-modal" id="galleryModal">
+    <div class="gallery-modal-content">
+        <button class="gallery-modal-close">&times;</button>
+        <img src="" alt="Gallery Image">
+    </div>
+</div>
+<div class="modal" id="appointmentModal">
+    <div class="modal-content">
+        <button class="close-modal" id="closeAppointmentModal">&times;</button>
+        <h2>Schedule an Appointment</h2>
+        <form id="appointmentForm">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="tel" placeholder="Phone Number" required>
+            <select id="serviceSelect" required>
+                <option value="">Select Service</option>
+                <option value="cosmetic">Cosmetic Dentistry</option>
+                <option value="implants">Dental Implants</option>
+                <option value="orthodontics">Orthodontics</option>
+                <option value="preventive">Preventive Care</option>
+            </select>
+            <input type="date" id="appointmentDate" required min="">
+            <div class="appointment-calendar">
+                <h3>Available Time Slots</h3>
+                <div class="time-slots" id="timeSlots"></div>
+            </div>
+            <textarea placeholder="Additional Notes" rows="3"></textarea>
+            <button type="submit" class="btn">Confirm Appointment</button>
+            <div class="spinner"></div>
+        </form>
+    </div>
+</div>
+<!-- Team Section -->
+<section id="team" class="section">
+    <div class="section-inner">
+        <div class="section-header">
+            <h2 class="section-title">Meet Our Experts</h2>
+            <p class="section-subtitle">Our team of award-winning dental specialists is dedicated to providing you with the best care possible.</p>
+        </div>
+        <div class="team-grid">
+            <div class="team-card" data-aos="fade-up">
+                <div class="team-image-wrapper">
+                    <img src="images/3.png" alt="Dr. Smith" class="team-image">
+                </div>
+                <div class="team-info">
+                    <h3 class="team-name">Dr. Sarah Smith</h3>
+                    <p class="team-role">Cosmetic Dentist</p>
+                    <p class="team-bio">Specialized in advanced cosmetic procedures with over 15 years of experience.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.061a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.937 4.937 0 004.604 3.417 9.868 9.868 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63a9.936 9.936 0 002.46-2.548l-.047-.02z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="team-card" data-aos="fade-up">
+                <div class="team-image-wrapper">
+                    <img src="images/3.png" alt="Dr. Smith" class="team-image">
+                </div>
+                <div class="team-info">
+                    <h3 class="team-name">Dr. Sarah Smith</h3>
+                    <p class="team-role">Cosmetic Dentist</p>
+                    <p class="team-bio">Specialized in advanced cosmetic procedures with over 15 years of experience.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.061a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.937 4.937 0 004.604 3.417 9.868 9.868 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63a9.936 9.936 0 002.46-2.548l-.047-.02z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="team-card" data-aos="fade-up">
+                <div class="team-image-wrapper">
+                    <img src="images/3.png" alt="Dr. Smith" class="team-image">
+                </div>
+                <div class="team-info">
+                    <h3 class="team-name">Dr. Sarah Smith</h3>
+                    <p class="team-role">Cosmetic Dentist</p>
+                    <p class="team-bio">Specialized in advanced cosmetic procedures with over 15 years of experience.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.061a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.937 4.937 0 004.604 3.417 9.868 9.868 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63a9.936 9.936 0 002.46-2.548l-.047-.02z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link">
+                            <svg class="social-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more team cards -->
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="section">
+    <div class="section-inner">
+        <div class="section-header">
+            <h2 class="section-title">Get in Touch</h2>
+                <p class="section-subtitle">Schedule your consultation or ask us any questions you may have.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item" data-aos="fade-right">
+                        <i class="fas fa-map-marker-alt contact-icon"></i>
+                        <div class="contact-text">
+                            <h4>Location</h4>
+                            <p>123 Luxury Avenue<br>Beverly Hills, CA 90210</p>
+                        </div>
+                    </div>
+                    <div class="contact-item" data-aos="fade-right" data-aos-delay="100">
+                        <i class="fas fa-phone-alt contact-icon"></i>
+                        <div class="contact-text">
+                            <h4>Phone</h4>
+                            <p>+1 (310) 555-0123<br>+1 (310) 555-0124</p>
+                        </div>
+                    </div>
+                    <div class="contact-item" data-aos="fade-right" data-aos-delay="200">
+                        <i class="fas fa-envelope contact-icon"></i>
+                        <div class="contact-text">
+                            <h4>Email</h4>
+                            <p>info@vizagdental.com<br>appointments@vizagdental.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item" data-aos="fade-right" data-aos-delay="300">
+                        <i class="fas fa-clock contact-icon"></i>
+                        <div class="contact-text">
+                            <h4>Hours</h4>
+                            <p>Monday - Friday: 9:00 AM - 7:00 PM<br>Saturday: 9:00 AM - 5:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" data-aos="fade-left">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Full Name</label>
+                        <input type="text" id="name" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" id="email" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone" class="form-label">Phone Number</label>
+                        <input type="tel" id="phone" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="service" class="form-label">Service Interest</label>
+                        <select id="service" class="form-input" required>
+                            <option value="">Select a service</option>
+                            <option value="cosmetic">Cosmetic Dentistry</option>
+                            <option value="implants">Dental Implants</option>
+                            <option value="orthodontics">Orthodontics</option>
+                            <option value="general">General Dentistry</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" class="form-textarea" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="footer-logo">
+                    <i class="fas fa-tooth"></i>
+                    Vizag Dental
+                </div>
+                <p class="footer-about">Experience world-class dental care in a luxurious and comfortable environment. Your smile is our masterpiece.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-heading">Quick Links</h4>
+                <div class="footer-links">
+                    <a href="#home" class="footer-link">Home</a>
+                    <a href="#services" class="footer-link">Services</a>
+                    <a href="#about" class="footer-link">About</a>
+                    <a href="#gallery" class="footer-link">Gallery</a>
+                    <a href="#team" class="footer-link">Team</a>
+                    <a href="#contact" class="footer-link">Contact</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-heading">Services</h4>
+                <div class="footer-links">
+                    <a href="#" class="footer-link">Cosmetic Dentistry</a>
+                    <a href="#" class="footer-link">Dental Implants</a>
+                    <a href="#" class="footer-link">Orthodontics</a>
+                    <a href="#" class="footer-link">Teeth Whitening</a>
+                    <a href="#" class="footer-link">General Dentistry</a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4 class="footer-heading">Newsletter</h4>
+                <p style="color: #94a3b8; margin-bottom: 1rem;">Subscribe to receive updates and special offers.</p>
+                <form class="footer-form">
+                    <input type="email" placeholder="Your email" class="form-input" style="margin-bottom: 1rem;">
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Vizag Dental. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Mobile Navigation Button -->
+    <button class="mobile-nav-toggle">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <script  src="index.js"></script>
+</body>
+</html>
