@@ -462,17 +462,6 @@ h1, h2, h3, h4 {
     margin: 0 auto;
 }
 
-@media (max-width: 768px) {
-    .gallery-grid {
-        columns: 2;
-    }
-}
-
-@media (max-width: 480px) {
-    .gallery-grid {
-        columns: 1;
-    }
-}
 
 .gallery-item {
     break-inside: avoid;
@@ -579,6 +568,9 @@ h1, h2, h3, h4 {
     width: 90%;
     max-width: 500px;
     text-align: center;
+    max-height: 80vh; /* Constrain height on smaller screens */
+    overflow-y: auto; /* Enable vertical scrolling */
+    position: relative;
 }
 
 .close-modal {
@@ -696,16 +688,7 @@ h1, h2, h3, h4 {
     100% { transform: rotate(360deg); }
 }
 
-@media (max-width: 640px) {
-    .modal-content {
-        margin: 1rem auto;
-        padding: 1.5rem;
-    }
 
-    .time-slots {
-        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
-    }
-}
 /* Team Section */
 .team-grid {
     display: grid;
@@ -1004,13 +987,12 @@ h1, h2, h3, h4 {
     color: var(--primary);
     font-weight: 500;
     transition: all 0.4s ease;
-    opacity: 0;
-    transform: translateY(10px);
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .service-card:hover .service-btn {
-    opacity: 1;
-    transform: translateY(0);
+   
     color: var(--white);
 }
 
@@ -1142,20 +1124,48 @@ h1, h2, h3, h4 {
     .team-info {
         padding: 1.25rem;
     }
+     .gallery-grid {
+        columns: 2;
+    }
 }
 
+@media (max-width: 640px) {
+    .modal-content {
+        margin: 1rem auto;
+        padding: 1.5rem;
+    }
+
+    .time-slots {
+        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    }
+}
 @media (max-width: 480px) {
+    .gallery-grid {
+        columns: 1;
+    }
+    .scroll-indicator {
+    position: absolute;
+    bottom: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--white);
+    font-size: 2rem;
+    animation: bounce 2s infinite;
+    cursor: pointer;
+    opacity: 0;
+    animation: fadeIn 1s ease forwards 1.3s;
+}
     .gallery-grid {
         grid-template-columns: 1fr;
     }
 
     .hero-title {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
     .hero-subtitle {
         font-size: 1rem;
         margin-bottom: 1.5rem;
-        line-height: 1;
+        line-height: 1.5;
         opacity: 0;
         transform: translateY(30px);
         animation: fadeInUp 1s ease forwards 0.7s;
