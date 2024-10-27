@@ -221,7 +221,10 @@
                 <option value="orthodontics">Orthodontics</option>
                 <option value="preventive">Preventive Care</option>
             </select>
-            <input type="date" id="appointmentDate" required min="">
+            <div class="input-container">
+                <label for="appointmentDate" class="input-label">Select Appointment Date</label>
+                <input type="date" id="appointmentDate" placeholder="Select Appointment Date" required>
+            </div>
             <div class="appointment-calendar">
                 <h3>Available Time Slots</h3>
                 <div class="time-slots" id="timeSlots"></div>
